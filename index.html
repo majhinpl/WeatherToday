@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Todo App</title>
+  </head>
+
+  <body>
+    <div class="content-wrapper">
+      <div class="container">
+        <div class="todo-app">
+          <div class="heading">
+            <h2>
+              <i class="ri-home-line"></i>
+              Tasks
+            </h2>
+          </div>
+          <div class="task-container">
+            <div id="todo-list"></div>
+            <div class="add-task-wrapper">
+              <div class="input">
+                <i class="ri-checkbox-blank-circle-line ri-xl"></i>
+                <input
+                  type="text"
+                  id="todo-input"
+                  placeholder="Add a task"
+                  required
+                />
+              </div>
+              <button id="add-task">
+                <i class="ri-add-line ri-xl"></i>
+                Add a task
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
