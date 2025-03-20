@@ -29,12 +29,6 @@ image {
   max-width: 100%;
 }
 
-.weather-wuery-app img {
-  height: 350px;
-  width: 100%;
-  object-fit: cover;
-}
-
 .weather-wuery-app .brand {
   display: flex;
   align-items: center;
@@ -47,4 +41,128 @@ input {
   padding: 0.8rem;
   background-color: inherit;
   cursor: pointer;
+}
+
+.heading {
+  background-image: url("https://img.freepik.com/free-photo/beautiful-field-springtime-sky-with-clouds-horizon-landscape_90220-1117.jpg?t=st=1742317815~exp=1742321415~hmac=a20d581249c4c4d1e7fc2d5e2cc8332fd9939466681249ddd6abd79cdb4f563f&w=996");
+  /* mix-blend-mode: soft-light; */
+  height: 50dvh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+
+.input-container {
+  padding: 1.5rem;
+  margin-top: -150px;
+}
+
+.input-container input::placeholder {
+  color: var(--text-200);
+}
+
+.input-container input {
+  padding: 1rem;
+  width: 60%;
+  outline: none;
+  text-transform: uppercase;
+  border: 1px solid #88acdb;
+  border-start-start-radius: 15px;
+  border-end-start-radius: 15px;
+  z-index: 999;
+}
+
+.input-container button {
+  padding: 1rem;
+  width: max-content;
+  outline: none;
+  text-transform: uppercase;
+  color: var(--accent-200);
+  background-color: #585858;
+  border: 1px solid #88acdb;
+  border-start-end-radius: 15px;
+  border-end-end-radius: 15px;
+  z-index: 999;
+}
+
+.query-location {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 1.5rem;
+}
+
+.query-location .title {
+  font-weight: 600;
+  color: var(--text-100);
+  margin-bottom: 1rem;
+}
+
+.query-location .location-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.location-container .location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 0.5rem;
+  background-color: var(--bg-200);
+  border: 1px solid var(--bg-200);
+  border-radius: 8px;
+}
+
+.location-container .location:hover {
+  background-color: var(--bg-300);
+  transition: background-color 0.6s ease-in-out;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#error-message {
+  margin-top: 1rem;
+  text-align: center;
+  color: red;
+}
+
+@media (min-width: 600px) {
+  .input-container {
+    margin-top: -100px;
+    margin-left: 30%;
+  }
+
+  .input-container input {
+    padding: 1rem;
+    width: 400px;
+    outline: none;
+    text-transform: uppercase;
+    border: 1px solid #88acdb;
+    border-start-start-radius: 15px;
+    border-end-start-radius: 15px;
+  }
+
+  .input-container button {
+    padding: 1rem;
+    width: max-content;
+    outline: none;
+    text-transform: uppercase;
+    color: var(--accent-200);
+    background-color: var(--primary-200);
+    border: 1px solid #88acdb;
+    border-start-end-radius: 15px;
+    border-end-end-radius: 15px;
+  }
+
+  .input-container button:hover {
+    background-color: #858585;
+    transition: background-color 0.5s ease-in-out;
+  }
 }

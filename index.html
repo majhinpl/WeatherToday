@@ -22,20 +22,30 @@
             <i class="ri-cloud-line ri-2x"></i>
             <h2>Weather Query App</h2>
           </div>
-          <img
-            src="https://img.freepik.com/free-photo/black-rain-abstract-dark-power_1127-2380.jpg?t=st=1742218670~exp=1742222270~hmac=eebe356ec5b7f4bbda41bc8475608c10556c8e9fa866b0cae9c71799041a2ca8&w=996"
-            alt=""
-          />
         </div>
         <div class="input-container">
           <input
             type="search"
             id="weather-input"
-            placeholder="Search your location"
+            placeholder="Search by city name"
             required
           />
 
-          <button>Search</button>
+          <button id="get-weather">Search</button>
+        </div>
+        <div class="query-location">
+          <span class="title">RECENT LOCATIONS</span>
+          <div class="location-container">
+            <div class="location">
+              <span class="area">Al Jubail, Saudi Arabia</span>
+              <span class="temperature">24c<sup>°</sup></span>
+              <span class="description"></span>
+            </div>
+          </div>
+
+          <p id="error-message" class="hidden">
+            Search Location not found! please try again
+          </p>
         </div>
       </div>
     </div>
